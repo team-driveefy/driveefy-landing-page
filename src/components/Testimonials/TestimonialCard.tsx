@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ITestimonialCardProps {
   author: {
     name: string;
@@ -8,14 +10,20 @@ interface ITestimonialCardProps {
   rating: number;
 }
 
-export default function TestimonialCard({ author, content, rating }: ITestimonialCardProps) {
+export default function TestimonialCard({
+  author,
+  content,
+  rating,
+}: ITestimonialCardProps) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
       <div className="flex items-center mb-4">
-        <img
+        <Image
           src={author.avatar}
           alt={author.name}
           className="w-12 h-12 rounded-full mr-4"
+          width={256}
+        height={256}
         />
         <div>
           <h4 className="font-semibold">{author.name}</h4>
@@ -27,7 +35,9 @@ export default function TestimonialCard({ author, content, rating }: ITestimonia
         {[...Array(5)].map((_, i) => (
           <svg
             key={i}
-            className={`w-5 h-5 ${i < rating ? 'text-yellow-400' : 'text-gray-300'}`}
+            className={`w-5 h-5 ${
+              i < rating ? "text-yellow-400" : "text-gray-300"
+            }`}
             fill="currentColor"
             viewBox="0 0 20 20"
           >

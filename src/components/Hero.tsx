@@ -1,13 +1,15 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <div className="pt-36 pb-16 bg-[url('https://sr-website.shiprocket.in/wp-content/uploads/2024/11/bg-colors-scaled-1.webp')] bg-cover bg-no-repeat">
+    <div className="pt-36 pb-16 bg-[url('https://sr-website.shiprocket.in/wp-content/uploads/2024/11/bg-colors-scaled-1.webp')] bg-cover bg-no-repeat min-h-[700px]">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-gray-600 mb-4">Supply Chain Management</p>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-heading">
               The world's most intuitive{" "}
-              <span className="text-blue-700">
+              <span className="text-primary">
                 AI-Powered Visibility Platform
               </span>
             </h1>
@@ -21,10 +23,12 @@ export default function Hero() {
             </button>
           </div>
           <div className="relative">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
               alt="Supply Chain Management"
-              className="rounded-lg shadow-xl"
+              className="rounded-lg shadow-xl w-full h-full"
+              width={256}
+              height={256}
             />
           </div>
         </div>

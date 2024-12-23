@@ -6,7 +6,7 @@ export default function Team() {
   return (
     <div className="bg-gray-50 py-16">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center text-blue-700 mb-2">
+        <h2 className="text-3xl font-bold text-center text-primary mb-2 font-heading">
           Our Team
         </h2>
         <h3 className="text-2xl font-bold text-center mb-4">

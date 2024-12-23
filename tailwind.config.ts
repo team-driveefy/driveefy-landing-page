@@ -9,8 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#292A6A",
+        hoverColor: "#585A8D",
+      },
+      fontFamily: {
+        heading: ["Mons Sans", "sans-serif"],
       },
     },
   },

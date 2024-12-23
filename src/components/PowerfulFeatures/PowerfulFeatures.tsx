@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react";
 
 import { TABS_FEATURES } from "../../shared/constant";
@@ -11,7 +13,7 @@ export default function PowerfulFeatures() {
   return (
     <div className="bg-gray-50 py-16">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-4">
+        <h2 className="text-3xl font-bold text-center mb-4 first-line font-heading">
           Powerful Advanced Features
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">

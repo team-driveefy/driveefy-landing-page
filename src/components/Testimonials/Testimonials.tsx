@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -5,14 +7,13 @@ import { TESTIMONIALS } from "../../shared/constant";
 
 import TestimonialCard from "./TestimonialCard";
 
-
 export default function Testimonials() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
     <div className="bg-gray-50 py-16">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-4">
+        <h2 className="text-3xl font-bold text-center mb-4 font-heading">
           What They Say About Us
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
@@ -58,7 +59,7 @@ export default function Testimonials() {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full ${
-                index === currentSlide ? "bg-blue-700" : "bg-gray-300"
+                index === currentSlide ? "bg-primary" : "bg-gray-300"
               }`}
             />
           ))}

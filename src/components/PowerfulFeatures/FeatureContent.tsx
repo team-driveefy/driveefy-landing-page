@@ -17,7 +17,7 @@ export default function FeatureContent({ title, description, stats }: IFeatureCo
         <div>
           <h3 className="text-2xl font-bold mb-4">{title}</h3>
           <p className="text-gray-600 mb-6">{description}</p>
-          <button className="text-blue-700 flex items-center space-x-2 hover:text-blue-800">
+          <button className="text-primary flex items-center space-x-2 hover:text-blue-800">
             <span>Know More About us</span>
             <ArrowRight className="w-4 h-4" />
           </button>
@@ -25,7 +25,7 @@ export default function FeatureContent({ title, description, stats }: IFeatureCo
         <div className="flex items-center justify-center">
           <div className="relative">
             <div className="w-32 h-32 rounded-full border-8 border-blue-100 flex items-center justify-center">
-              <span className="text-2xl font-bold text-blue-700">{stats.percentage}%</span>
+              <span className="text-2xl font-bold text-primary">{stats.percentage}%</span>
             </div>
             <div className="absolute top-full mt-4 text-center w-full">
               <div className="grid grid-cols-2 gap-4">

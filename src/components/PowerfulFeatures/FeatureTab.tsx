@@ -10,7 +10,7 @@ export default function FeatureTab({ title, isActive, onClick }: IFeatureTabProp
       onClick={onClick}
       className={`px-6 py-3 rounded-lg transition-all ${
         isActive
-          ? 'bg-blue-700 text-white'
+          ? 'bg-primary text-white'
           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
       }`}
     >
