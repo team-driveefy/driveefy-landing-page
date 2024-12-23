@@ -18,7 +18,7 @@ export default function Hero() {
               platform trusted by Fortune 500 companies. Save costs, reduce
               manual efforts and make your customers happier.
             </p>
-            <button className="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-800">
+            <button className="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-hoverColor">
               GET INSTANT DEMO
             </button>
           </div>

@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import { notify } from "@/utils/utils";
 import Navbar from "./Navbar";
+import { CompanyIcon } from "@/shared/icons";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,8 +22,7 @@ export default function Header() {
           {/* Logo Section */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <Truck className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold text-primary">DRIVEEFY</span>
+              <CompanyIcon className="w-40" />
             </Link>
           </div>
 
@@ -44,9 +44,9 @@ export default function Header() {
 
           {/* Action Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="text-gray-800 hover:text-primary">Log In</button>
+            <button className="text-primary font-semibold hover:bg-hoverColor hover:text-white border-primary border-2 px-4 py-1 rounded-lg">Log In</button>
             <button
-              className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-800"
+              className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-hoverColor"
               onClick={handleClick}
             >
               Get Demo

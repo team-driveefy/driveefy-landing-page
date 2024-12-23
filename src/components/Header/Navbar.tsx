@@ -22,8 +22,10 @@ export default function Navbar() {
             <Link
               href={`/${href === "home" ? "" : href}`}
               className={`${
-                isActive === href ? "text-red-800" : "text-gray-800"
-              } hover:text-primary capitalize font-semibold`}
+                isActive === href
+                  ? "text-primary font-semibold"
+                  : "text-gray-800"
+              } hover:text-primary hover:font-semibold capitalize `}
             >
               {title}
             </Link>
