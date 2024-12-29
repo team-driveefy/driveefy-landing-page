@@ -1,8 +1,8 @@
-import { HOME_FEATURES } from "../shared/constant";
+import { HOME_FEATURES } from "../../shared/constant";
 
 export default function Features() {
   return (
-    <div className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-4 font-heading">
           Our Special Features
@@ -17,9 +17,7 @@ export default function Features() {
               key={index}
               className="text-center p-6 bg-white rounded-lg shadow-sm hover:border-[#41427E] hover:border-2 border-2 border-transparent hover:bg-hoverColor group"
             >
-              <div className="flex justify-center mb-4 group-hover:text-white">
-                {feature.icon}
-              </div>
+              <div className="flex justify-center mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-3 group-hover:text-white">
                 {feature.title}
               </h3>
@@ -30,6 +28,6 @@ export default function Features() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,9 +1,12 @@
 import { Phone } from "lucide-react";
 import Image from "next/image";
+import { Fragment } from "react";
+
+import { Button } from "@/shared/ui/Button";
 
 export default function WhyChooseUs() {
   return (
-    <div className="bg-white py-16">
+    <section className="bg-white py-16">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -19,7 +22,7 @@ export default function WhyChooseUs() {
             <h2 className="text-3xl font-bold text-primary mb-4 font-heading">
               Why Choose us
             </h2>
-            <h3 className="text-2xl font-bold mb-6">
+            <h3 className="text-2xl font-bold mb-6 font-heading">
               Create your app page With expert developer
             </h3>
             <p className="text-gray-600 mb-8">
@@ -54,13 +57,20 @@ export default function WhyChooseUs() {
                 <span className="font-semibold">Strong Encryption</span>
               </div>
             </div>
-            <button className="mt-8 bg-primary text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-blue-800">
-              <Phone className="w-4 h-4" />
-              <span>Contact Us</span>
-            </button>
+            <Button
+              className="mt-8 flex items-center space-x-2"
+              variant="primary"
+              ariaLabel="Contact Us"
+              title={
+                <Fragment>
+                  <Phone className="w-4 h-4" />
+                  <span>Contact Us</span>
+                </Fragment>
+              }
+            />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

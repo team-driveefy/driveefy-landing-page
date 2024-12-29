@@ -26,7 +26,7 @@ export default function TeamMember({
         width={256}
         height={256}
       />
-      <h3 className="text-xl font-bold">{name}</h3>
+      <h3 className="text-xl font-bold font-heading">{name}</h3>
       <p className="text-gray-600">{role}</p>
 
       {socialLinks && (
@@ -41,7 +41,7 @@ export default function TeamMember({
                 alt="LinkedIn"
                 className="w-5 h-5"
                 width={256}
-        height={256}
+                height={256}
               />
             </a>
           )}
@@ -55,7 +55,7 @@ export default function TeamMember({
                 alt="Instagram"
                 className="w-5 h-5"
                 width={256}
-        height={256}
+                height={256}
               />
             </a>
           )}
@@ -69,7 +69,7 @@ export default function TeamMember({
                 alt="Facebook"
                 className="w-5 h-5"
                 width={256}
-        height={256}
+                height={256}
               />
             </a>
           )}

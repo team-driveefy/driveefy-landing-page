@@ -1,17 +1,14 @@
-import { TEAM_MEMBERS } from "../../shared/constant";
+import { TEAM_MEMBERS } from "../../../shared/constant";
 
 import TeamMember from "./TeamMember";
 
 export default function Team() {
   return (
-    <div className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16">
       <div className="container">
         <h2 className="text-3xl font-bold text-center text-primary mb-2 font-heading">
           Our Team
         </h2>
-        <h3 className="text-2xl font-bold text-center mb-4">
-          The People Behind Quiety
-        </h3>
         <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
           Intrinsicly strategizes cutting-edge before interoperable applications
           incubate extensive expertise through integrated intellectual capital.
@@ -23,6 +20,6 @@ export default function Team() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

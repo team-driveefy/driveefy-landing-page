@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 
-import { TABS_FEATURES } from "../../shared/constant";
+import { TABS_FEATURES } from "../../../shared/constant";
 
 import FeatureTab from "./FeatureTab";
 import FeatureContent from "./FeatureContent";
@@ -11,7 +11,7 @@ export default function PowerfulFeatures() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-4 first-line font-heading">
           Powerful Advanced Features
@@ -34,6 +34,6 @@ export default function PowerfulFeatures() {
 
         <FeatureContent {...TABS_FEATURES[activeTab].content} />
       </div>
-    </div>
+    </section>
   );
 }

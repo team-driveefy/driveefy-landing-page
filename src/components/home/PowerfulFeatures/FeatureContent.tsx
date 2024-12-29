@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { Button } from "@/shared/ui/Button";
 
 interface IFeatureContentProps {
   title: string;
@@ -21,12 +21,9 @@ export default function FeatureContent({
         <div>
           <h3 className="text-2xl text-primary font-bold mb-4">{title}</h3>
           <p className="text-gray-600 mb-6">{description}</p>
-          <button className="text-primary flex items-center border-primary border-2 rounded-lg space-x-2 hover:text-white p-3 hover:bg-hoverColor">
-            <span>Know More</span>
-            {/* <ArrowRight className="w-4 h-4" /> */}
-          </button>
+          <Button variant="secondary" title="Know More" ariaLabel="Know More" />
         </div>
-        <div className="flex items-center justify-center">
+        {/* <div className="flex items-center justify-center">
           <div className="relative">
             <div className="w-32 h-32 rounded-full border-8 border-blue-100 flex items-center justify-center">
               <span className="text-2xl font-bold text-primary">
@@ -46,7 +43,7 @@ export default function FeatureContent({
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

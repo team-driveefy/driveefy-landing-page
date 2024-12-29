@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { Button } from "@/shared/ui/Button";
+
 interface IServiceCardProps {
   icon: string;
   title: string;
@@ -18,9 +20,11 @@ export default function ServiceCard({ icon, title }: IServiceCardProps) {
         />
       </div>
       <h3 className="text-lg font-semibold mb-4">{title}</h3>
-      <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-800">
-        Explore Product
-      </button>
+      <Button
+        variant="primary"
+        title="Explore Product"
+        ariaLabel="Explore Product"
+      />
     </div>
   );
 }

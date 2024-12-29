@@ -1,10 +1,10 @@
-import { SERVICES } from "../../shared/constant";
+import { SERVICES } from "../../../shared/constant";
 
 import ServiceCard from "./ServiceCard";
 
 export default function Services() {
   return (
-    <div className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16">
       <div className="container">
         <h2 className="text-3xl font-bold text-center text-primary mb-12 font-heading">
           Our Services
@@ -15,6 +15,6 @@ export default function Services() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

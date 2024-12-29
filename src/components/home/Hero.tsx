@@ -1,8 +1,10 @@
 import Image from "next/image";
 
+import { Button } from "@/shared/ui/Button";
+
 export default function Hero() {
   return (
-    <div className="pt-36 pb-16 bg-[url('https://sr-website.shiprocket.in/wp-content/uploads/2024/11/bg-colors-scaled-1.webp')] bg-cover bg-no-repeat min-h-[700px]">
+    <section className="pt-36 pb-16 bg-[url('https://sr-website.shiprocket.in/wp-content/uploads/2024/11/bg-colors-scaled-1.webp')] bg-cover bg-no-repeat min-h-[700px]">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
@@ -18,9 +20,12 @@ export default function Hero() {
               platform trusted by Fortune 500 companies. Save costs, reduce
               manual efforts and make your customers happier.
             </p>
-            <button className="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-hoverColor">
-              GET INSTANT DEMO
-            </button>
+            <Button
+              className="px-8 py-3"
+              variant="primary"
+              title="GET INSTANT DEMO"
+              ariaLabel="Get Instant Demo"
+            />
           </div>
           <div className="relative">
             <Image
@@ -33,6 +38,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

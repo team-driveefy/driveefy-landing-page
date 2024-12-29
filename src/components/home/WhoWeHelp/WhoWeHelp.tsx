@@ -1,10 +1,10 @@
 import ClientCard from "./ClientCard";
 
-import { CLIENTS } from "../../shared/constant";
+import { CLIENTS } from "../../../shared/constant";
 
 export default function WhoWeHelp() {
   return (
-    <div className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16">
       <div className="container">
         <h2 className="text-4xl font-bold text-center mb-4 font-heading">
           Who do we <span className="text-primary">help</span>?
@@ -15,6 +15,6 @@ export default function WhoWeHelp() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

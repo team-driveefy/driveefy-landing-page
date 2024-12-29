@@ -2,19 +2,19 @@ import { Wifi, Users, Network, Truck, Globe } from "lucide-react";
 
 export const HOME_FEATURES = [
   {
-    icon: <Wifi className="h-12 w-12 text-blue-500" />,
+    icon: <Wifi className="h-12 w-12 text-primary group-hover:text-white" />,
     title: "Stay Connected",
     description:
       "Professionally integrate high standards applications before user friendly leadership skills.",
   },
   {
-    icon: <Users className="h-12 w-12 text-blue-500" />,
+    icon: <Users className="h-12 w-12 text-primary group-hover:text-white" />,
     title: "Stay Connected",
     description:
       "Professionally integrate high standards applications before user friendly leadership skills.",
   },
   {
-    icon: <Network className="h-12 w-12 text-blue-500" />,
+    icon: <Network className="h-12 w-12 text-primary group-hover:text-white" />,
     title: "Stay Connected",
     description:
       "Professionally integrate high standards applications before user friendly leadership skills.",

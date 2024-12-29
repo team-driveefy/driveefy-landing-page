@@ -1,12 +1,11 @@
-import { STATS } from "../shared/constant";
+import { STATS } from "../../shared/constant";
 
 export default function Stats() {
   return (
-    <div className="bg-white py-16">
+    <section className="bg-white py-16">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-2 font-heading">
-          Proudly serving in{" "}
-          <span className="text-primary">70+ Countries</span>
+          Proudly serving in <span className="text-primary">70+ Countries</span>
         </h2>
         <div className="mt-12 grid grid-cols-2 gap-8 md:grid-cols-5">
           {STATS.map((stat, index) => (
@@ -19,6 +18,6 @@ export default function Stats() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

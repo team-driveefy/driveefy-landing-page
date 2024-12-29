@@ -1,8 +1,10 @@
 import Image from "next/image";
 
+import { Button } from "@/shared/ui/Button";
+
 export default function Story() {
   return (
-    <div className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -47,16 +49,20 @@ export default function Story() {
             </div>
 
             <div className="mt-8 flex space-x-4">
-              <button className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-800">
-                Start Free Trial
-              </button>
-              <button className="text-primary underline hover:text-blue-800">
-                See All Our Services
-              </button>
+              <Button
+                variant="primary"
+                title="Start Free Trial"
+                ariaLabel="Start Trial"
+              />
+              <Button
+                variant="secondary"
+                title="See All Our Services"
+                ariaLabel="All Services"
+              />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

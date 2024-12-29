@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import { TESTIMONIALS } from "../../shared/constant";
+import { TESTIMONIALS } from "../../../shared/constant";
 
 import TestimonialCard from "./TestimonialCard";
 
@@ -11,7 +11,7 @@ export default function Testimonials() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-4 font-heading">
           What They Say About Us
@@ -65,6 +65,6 @@ export default function Testimonials() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

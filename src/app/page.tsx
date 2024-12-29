@@ -1,9 +1,9 @@
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
-import PowerfulFeatures from "@/components/PowerfulFeatures/PowerfulFeatures";
-import Stats from "@/components/Stats";
-import Testimonials from "@/components/Testimonials/Testimonials";
-import WhoWeHelp from "@/components/WhoWeHelp/WhoWeHelp";
+import Features from "@/components/home/Features";
+import Hero from "@/components/home/Hero";
+import PowerfulFeatures from "@/components/home/PowerfulFeatures/PowerfulFeatures";
+import Stats from "@/components/home/Stats";
+import Testimonials from "@/components/home/Testimonials/Testimonials";
+import WhoWeHelp from "@/components/home/WhoWeHelp/WhoWeHelp";
 
 export default function Home() {
   return (
