@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function AboutHero() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 ">
+    <div className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Section */}
       <section className="relative">
         <div className="relative w-full h-96">
@@ -21,7 +21,7 @@ export default function AboutHero() {
       </section>
 
       {/* Content Section */}
-      <section className="max-w-4xl mx-auto py-12 px-6">
+      <section className="container py-10">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">Who We Are</h2>
         <p className="mb-6 leading-relaxed">
           We are a team of passionate individuals dedicated to delivering the

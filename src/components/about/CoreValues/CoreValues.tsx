@@ -19,7 +19,10 @@ export default function CoreValues() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {CORE_VALUES.map((value, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg text-center">
+            <div
+              key={index}
+              className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-white border-opacity-30 p-8 rounded-lg text-center"
+            >
               <Image
                 src={value.icon}
                 alt={value.title}
@@ -27,7 +30,9 @@ export default function CoreValues() {
                 width={256}
                 height={256}
               />
-              <h3 className="text-xl font-semibold">{value.title}</h3>
+              <h3 className="text-xl font-semibold text-white">
+                {value.title}
+              </h3>
             </div>
           ))}
         </div>

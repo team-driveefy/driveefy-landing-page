@@ -112,7 +112,7 @@ export const TEAM_MEMBERS = [
   {
     image:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    name: "Abhishek Anand",
+    name: "Dhgruvik ",
     role: "Software Developer",
     socialLinks: {
       linkedin: "#",
@@ -123,7 +123,7 @@ export const TEAM_MEMBERS = [
   {
     image:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    name: "Abhishek Anand",
+    name: "Dharmil",
     role: "Software Developer",
     socialLinks: {
       linkedin: "#",
@@ -134,6 +134,18 @@ export const TEAM_MEMBERS = [
 ];
 
 export const SERVICES = [
+  {
+    icon: "https://api.iconify.design/carbon:delivery.svg",
+    title: "GoProcure: Automated RFQ Management",
+  },
+  {
+    icon: "https://api.iconify.design/carbon:delivery.svg",
+    title: "GoProcure: Automated RFQ Management",
+  },
+  {
+    icon: "https://api.iconify.design/carbon:delivery.svg",
+    title: "GoProcure: Automated RFQ Management",
+  },
   {
     icon: "https://api.iconify.design/carbon:delivery.svg",
     title: "GoProcure: Automated RFQ Management",
