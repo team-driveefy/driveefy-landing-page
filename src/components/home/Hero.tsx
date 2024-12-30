@@ -10,7 +10,7 @@ export default function Hero() {
           <div>
             <p className="text-gray-600 mb-4">Supply Chain Management</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 font-heading">
-              The world's most intuitive{" "}
+              {`The world's most intuitive `}
               <span className="text-primary">
                 AI-Powered Visibility Platform
               </span>

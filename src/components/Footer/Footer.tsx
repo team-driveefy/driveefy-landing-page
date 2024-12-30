@@ -85,7 +85,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="mt-8 border-t border-white pt-4 text-center text-sm">
-        <p>&copy; {new Date().getFullYear()} Driveefy. All rights reserved.</p>
+        <p> {new Date().getFullYear()} Driveefy. All rights reserved.</p>
       </div>
     </footer>
   );

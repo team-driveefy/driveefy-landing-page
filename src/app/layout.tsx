@@ -5,7 +5,6 @@ import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
-import Navbar from "@/components/Header/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 

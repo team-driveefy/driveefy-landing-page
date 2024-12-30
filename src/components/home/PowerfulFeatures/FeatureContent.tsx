@@ -13,7 +13,6 @@ interface IFeatureContentProps {
 export default function FeatureContent({
   title,
   description,
-  stats,
 }: IFeatureContentProps) {
   return (
     <div className="bg-white rounded-lg p-8 shadow-lg">

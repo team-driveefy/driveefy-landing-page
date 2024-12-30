@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren, ReactHTMLElement, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 
 interface IProps {
   title: string | ReactNode;
