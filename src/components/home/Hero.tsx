@@ -1,0 +1,43 @@
+import Image from "next/image";
+
+import { Button } from "@/shared/ui/Button";
+
+export default function Hero() {
+  return (
+    <section className="pt-36 pb-16 bg-[url('https://sr-website.shiprocket.in/wp-content/uploads/2024/11/bg-colors-scaled-1.webp')] bg-cover bg-no-repeat min-h-[700px]">
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-gray-600 mb-4">Supply Chain Management</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-heading">
+              {`The world's most intuitive `}
+              <span className="text-primary">
+                AI-Powered Visibility Platform
+              </span>
+            </h1>
+            <p className="text-gray-600 mb-8">
+              Gain a competitive edge with the global supply chain visibility
+              platform trusted by Fortune 500 companies. Save costs, reduce
+              manual efforts and make your customers happier.
+            </p>
+            <Button
+              className="px-8 py-3"
+              variant="primary"
+              title="GET INSTANT DEMO"
+              ariaLabel="Get Instant Demo"
+            />
+          </div>
+          <div className="relative">
+            <Image
+              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
+              alt="Supply Chain Management"
+              className="rounded-lg shadow-xl w-full h-full"
+              width={256}
+              height={256}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
